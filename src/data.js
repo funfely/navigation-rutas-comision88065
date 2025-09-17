@@ -1,3 +1,5 @@
+const img = (File) => import.meta.env.BASE_URL + 'images/' + File
+
 export const PRODUCTS = [
   {
     id: '1',
