@@ -1,4 +1,4 @@
-const img = (File) => import.meta.env.BASE_URL + 'images/' + File
+const img = (file) => import.meta.env.BASE_URL + 'images/' + file
 
 export const PRODUCTS = [
   {
@@ -8,7 +8,7 @@ export const PRODUCTS = [
     category: 'ropa',
     stock: 12,
     description: 'Remera con cuello en V',
-    image: '/images/remera-en-v.png'
+    image: img('remera-en-v.png')
   },
   {
     id: '2',
@@ -17,7 +17,7 @@ export const PRODUCTS = [
     category: 'ropa',
     stock: 45,
     description: 'Buzo Polar gris',
-    image: '/images/Buzo-polar.png'
+    image: img('buzo-polar.png')     // 
   },
   {
     id: '3',
@@ -25,8 +25,8 @@ export const PRODUCTS = [
     price: 30000,
     category: 'accesorios',
     stock: 30,
-    description: 'Buzo con logo Node',
-    image: '/images/llaveros-devs.png'
+    description: 'Llaveros para devs',
+    image: img('llaveros-devs.png')
   },
   {
     id: '4',
@@ -35,7 +35,7 @@ export const PRODUCTS = [
     category: 'accesorios',
     stock: 50,
     description: 'Gorra Linux',
-    image: '/images/gorra-linux.png'
+    image: img('gorra-linux.png')
   }
 ]
 
@@ -43,4 +43,3 @@ export const CATEGORIES = [
   { id: 'ropa', label: 'Ropa' },
   { id: 'accesorios', label: 'Accesorios' }
 ]
-
